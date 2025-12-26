@@ -1,0 +1,193 @@
+
+
+---
+
+📁 *Structure des fichiers*
+- `index.html` – la page principale  
+- `style.css` – le design du site  
+- `/images/` – tu peux y ajouter tes propres images (remplaçables)
+
+---
+
+🔵 *1. index.html*
+
+```html
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sercom Agency</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">Sercom Agency</div>
+    <nav>
+      <ul>
+        <li><a href="#">Accueil</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#testimonials">Témoignages</a></li>
+        <li><a href="#gallery">Galerie</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Un nettoyage impeccable, un service fiable</h1>
+    <a href="#contact" class="btn">Demander une soumission gratuite</a>
+  </section>
+
+  <section id="services">
+    <h2>Nos Services</h2>
+    <div class="service-cards">
+
+<div class="card"><h3>Résidentiel</h3><p>Nettoyage complet des maisons et appartements.</p></div>
+      <div class="card"><h3>Commercial</h3><p>Entretien de bureaux et espaces professionnels.</p></div>
+      <div class="card"><h3>Après-construction</h3><p>Nettoyage spécialisé après travaux.</p></div>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>À propos de nous</h2>
+    <p>Sercom Agency est une entreprise d'entretien ménager professionnelle dédiée à offrir un service fiable, efficace et écologique.</p>
+  </section>
+
+  <section id="testimonials">
+    <h2>Témoignages</h2>
+    <div class="testimonial">
+      <p>"Service incroyable, ma maison brille!"</p>
+      <strong>- Julie R.</strong>
+    </div>
+    <div class="testimonial">
+      <p>"Équipe ponctuelle et professionnelle."</p>
+      <strong>- Marc D.</strong>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <h2>Galerie</h2>
+    <div class="gallery-grid">
+      <img src="images/clean1.jpg" alt="Nettoyage 1" />
+      <img src="images/clean2.jpg" alt="Nettoyage 2" />
+      <img src="images/clean3.jpg" alt="Nettoyage 3" />
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contactez-nous</h2>
+    <form>
+      <input type="text" placeholder="Votre nom" required /> <input type="email" placeholder="Votre e-mail" required />
+      <textarea placeholder="Votre message" required></textarea>
+      <button type="submit">Envoyer</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Sercom Agency – Tous droits réservés</p>
+  </footer>
+</body>
+</html>
+```
+
+---
+
+🟦 *2. style.css*
+
+```css
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f5f9fc;
+  color: #333;
+}
+header {
+  background: #0d6efd;
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+}
+.hero {
+  background: url('images/hero.jpg') no-repeat center center/cover;
+  color: white;
+  padding: 100px 30px;
+  text-align: center;
+}
+.btn {
+  background: #ffc107;
+  color: black;
+  padding: 12px 24px;
+  text-decoration: none;
+  margin-top: 20px;
+  display: inline-block;
+}
+section {
+  padding: 60px 30px;
+}
+.service-cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.card {
+  background: white;
+  padding: 20px;
+  flex: 1;
+  min-width: 250px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.testimonial {
+  background: white;
+  padding: 20px;
+  margin-bottom: 20px;
+
+box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.gallery-grid {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.gallery-grid img {
+  width: 100%;
+  max-width: 300px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+}
+input, textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+button {
+  background: #0d6efd;
+  color: white;
+  padding: 12px;
+  border: none;
+  cursor: pointer;
+}
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+```
+
+---
